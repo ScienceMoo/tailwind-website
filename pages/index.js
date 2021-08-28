@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Header from "./header";
 
 export default function Home() {
   return (
@@ -8,14 +9,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Age 12 to Married <p className="text-blue-600">NFT!</p>
-        </h1>
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-2 md:px-20 text-center">
+        <Header />
 
-        <img src="/hugonft.jpg" alt="Vercel Logo" className="h-96" />
+        <img
+          src="/hugonft.jpg"
+          alt="Age 12 to Married NFT"
+          className="h-48 md:h-96 object-contain mb-2 md:mb-6"
+        />
 
-        <p className="mt-3 text-xl pl-20 pr-20">
+        <p className="mt-3 text-xl px-2 md:px-20">
           Seen by over 180 million people, Age 12 to Married is in the top 100
           viral videos of all time. This incredible work of art created by a
           young man with devotion and dedication has inpired many other similar
@@ -24,10 +27,10 @@ export default function Home() {
           NFT.
         </p>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full mb-4">
+        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full mb-4 px-2">
           <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+            href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+            className="p-6 mt-6 text-left border md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
             <h3 className="text-2xl font-bold">Youtube &rarr;</h3>
             <p className="mt-4 text-xl">
@@ -36,10 +39,10 @@ export default function Home() {
           </a>
 
           <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
+            href="/faq"
+            className="p-6 mt-6 text-left border md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
+            <h3 className="text-2xl font-bold">FAQ &rarr;</h3>
             <p className="mt-4 text-xl">
               Frequently asked questions and NFT information.
             </p>
@@ -49,32 +52,24 @@ export default function Home() {
 
       <footer className="flex items-center justify-between w-full h-24 border-t pl-20 pr-20">
         <div>
-          <ul>
-            <li>
-              <a
-                className="flex items-center justify-center"
-                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Channel
-              </a>
-            </li>
-          </ul>
+          <a
+            className="flex items-center justify-center"
+            href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Channel
+          </a>
         </div>
         <div>
-          <ul>
-            <li>
-              <a
-                className="flex items-center justify-center"
-                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Channel
-              </a>
-            </li>
-          </ul>
+          <a
+            className="flex items-center justify-center"
+            href="/faq"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            FAQ
+          </a>
         </div>
       </footer>
     </div>

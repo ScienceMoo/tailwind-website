@@ -15,7 +15,7 @@ export default function Home() {
 
         <img src="/hugonft.jpg" alt="Vercel Logo" className="h-96" />
 
-        <p className="mt-3 text-2xl">
+        <p className="mt-3 text-xl pl-20 pr-20">
           Seen by over 180 million people, Age 12 to Married is in the top 100
           viral videos of all time. This incredible work of art created by a
           young man with devotion and dedication has inpired many other similar

@@ -47,16 +47,35 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
+      <footer className="flex items-center justify-between w-full h-24 border-t pl-20 pr-20">
+        <div>
+          <ul>
+            <li>
+              <a
+                className="flex items-center justify-center"
+                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Channel
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <a
+                className="flex items-center justify-center"
+                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Channel
+              </a>
+            </li>
+          </ul>
+        </div>
       </footer>
     </div>
   );

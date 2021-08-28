@@ -13,21 +13,25 @@ export default function Home() {
           Age 12 to Married <p className="text-blue-600">NFT!</p>
         </h1>
 
+        <img src="/hugonft.jpg" alt="Vercel Logo" className="h-96" />
+
         <p className="mt-3 text-2xl">
-          Get started by editing{" "}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
+          Seen by over 180 million people, Age 12 to Married is in the top 100
+          viral videos of all time. This incredible work of art created by a
+          young man with devotion and dedication has inpired many other similar
+          videos on YouTube. Now, the video will be removed from YouTube and one
+          person will have the opportunity to own it in its new form as a 1/1
+          NFT.
         </p>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
+        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full mb-4">
           <a
             href="https://nextjs.org/docs"
             className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
           >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
+            <h3 className="text-2xl font-bold">Youtube &rarr;</h3>
             <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+              See the iconic video and check out Hugo's channel
             </p>
           </a>
 
@@ -37,27 +41,7 @@ export default function Home() {
           >
             <h3 className="text-2xl font-bold">Learn &rarr;</h3>
             <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
+              Frequently asked questions and NFT information.
             </p>
           </a>
         </div>

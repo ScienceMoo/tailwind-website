@@ -1,7 +1,7 @@
 export default function Header() {
   return (
     <>
-      <div className="flex justify-between items-center w-full">
+      <div className="flex justify-between items-center w-full px-4 bg-blue-400">
         <a href="/">
           <div className="flex items-center justify-start">
             <img
@@ -19,9 +19,12 @@ export default function Header() {
             </div>
           </div>
         </a>
-        <button className="py-2 px-4 bg-blue-400 rounded-lg font-bold h-10 md:h-12 text-sm md:text-md">
-          Contact
-        </button>
+        <a
+          href="https://foundation.app/@hugocornellier"
+          className="px-4 font-bold text-sm md:text-md"
+        >
+          Follow
+        </a>
       </div>
     </>
   );

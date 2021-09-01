@@ -16,7 +16,7 @@ export default function Home() {
         <Header />
 
         <div className="text-xl sm:text-2xl md:text-3xl mt-2">
-          Soon to be memorialized forever in an NFT auction!
+          Soon to be memorialized forever as an NFT!
         </div>
 
         <img

@@ -19,9 +19,16 @@ export default function AuctionTerms() {
 
         <div className="text-3xl font-bold">1. Definitions</div>
 
-        <div className="flex items-center">
-          <div className="pl-4 text-md mt-2">1.1 </div>
-          <div className="pl-4 text-md mt-2">1.1 </div>
+        <div>
+          <span className="pl-4 text-md mt-2 font-bold text-left">
+            1.1 "Media"
+          </span>
+          <span className="pl-4 text-md mt-2 text-left">
+            means the “Charlie Bit My Finger - Again!” or “Charlie Bit Me” viral
+            video, name, logo and the likenesses of Harry Davies-Carr and
+            Charlie Davies-Carr contained within the audio-video, images, names,
+            titles and audio files associated with the Purchased NFT.
+          </span>
         </div>
       </main>
 

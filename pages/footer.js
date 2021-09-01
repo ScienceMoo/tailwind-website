@@ -12,12 +12,7 @@ export default function Footer() {
             Foundation
           </a>
 
-          <a
-            className="flex items-center justify-center"
-            href="/auctionTerms"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a className="flex items-center justify-center" href="/auctionTerms">
             Auction Terms
           </a>
           <a href="mailto:hugo.cornellier@gmail.com">Press Inquiries</a>
@@ -34,7 +29,7 @@ export default function Footer() {
           </a>
           <a
             className="flex items-center justify-center"
-            href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+            href="https://twitter.com/hugo_cornellier"
             target="_blank"
             rel="noopener noreferrer"
           >

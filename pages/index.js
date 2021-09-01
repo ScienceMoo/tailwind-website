@@ -15,7 +15,7 @@ export default function Home() {
           className="flex flex-col items-center justify-start w-full flex-1"
           style={{ maxWidth: "900px" }}
         >
-          <div className="text-xl sm:text-2xl md:text-3xl mt-2 text-center">
+          <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 text-center">
             Soon to be memorialized forever as an NFT!
           </div>
 
@@ -74,14 +74,10 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col">
-              <a
-                className="flex items-center justify-center"
-                href="/faq"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                FAQ
+              <a href="mailto:<nowiki>hugo.cornellier@gmail.com">
+                Press Inquiries
               </a>
+
               <a
                 className="flex items-center justify-center"
                 href="/auctionTerms"

@@ -1,10 +1,9 @@
 import Head from "next/head";
-import Header from "./header";
+import Footer from "./footer";
 
 export default function Home() {
   return (
     <>
-      <Header />
       <div className="flex flex-col items-center justify-center min-h-screen py-2 px-4 sm:px-12 md:px-24 lg:px-60">
         <Head>
           <title>Age 12 to Married NFT</title>
@@ -63,51 +62,22 @@ export default function Home() {
             as part of the Ethereum blockchain.
           </div>
 
-          <button className="py-2 px-4 bg-red-500 rounded-lg border-2">
-            View on Foundation {"->"}
-          </button>
-
-          <footer className="mt-12 flex items-start justify-between w-full h-24 border-t">
-            <div>
-              <a
-                className="flex items-center justify-center"
-                href="https://foundation.app/@hugocornellier"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Foundation
-              </a>
-
-              <a
-                className="flex items-center justify-center"
-                href="/auctionTerms"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Auction Terms
-              </a>
-              <a href="mailto:hugo.cornellier@gmail.com">Press Inquiries</a>
+          <a href="https://foundation.app/@hugocornellier">
+            <div
+              className="py-2 px-6 bg-red-600 rounded-lg text-lg text-white mt-6 font-bold"
+              style={{
+                background: "rgb(2,0,36)",
+                background:
+                  "linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(0,144,255,1) 100%)",
+                boxShadow:
+                  "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
+              }}
+            >
+              View on Foundation &rarr;
             </div>
-            <div>
-              <div>© 2009-2021 Hugo Cornellier</div>
-              <a
-                className="flex items-center justify-center"
-                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Youtube
-              </a>
-              <a
-                className="flex items-center justify-center"
-                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </a>
-            </div>
-          </footer>
+          </a>
+
+          <Footer />
         </main>
       </div>
     </>

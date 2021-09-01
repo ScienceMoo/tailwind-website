@@ -21,9 +21,10 @@ export default function Header() {
         </a>
         <a
           href="https://foundation.app/@hugocornellier"
-          className="px-4 font-bold text-sm md:text-md"
+          className="px-4 font-bold text-sm md:text-md text-center"
+          style={{ maxWidth: "100px" }}
         >
-          Follow
+          Follow on Foundation
         </a>
       </div>
     </>

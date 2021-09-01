@@ -31,7 +31,6 @@ export default function Home() {
               alt="Age 12 to Married NFT"
               className="h-48 md:h-80 object-contain mb-2"
             />
-
             {/* <p className="text-gray-500 font-bold text-md self-start">
               184,453,211 views
             </p> */}
@@ -56,25 +55,28 @@ export default function Home() {
           <div className="text-2xl md:text-3xl mt-5">How does it work?</div>
 
           <div className="mt-3 text-md md:text-xl">
-            NFT stands for non-fungible token, meaning unique and
-            irreplaceable.NFT's give you something that can't be copied, the
-            right to say you have ownership of the art piece. Most NFTs are part
-            of a cryptocurrency's blockchain, usually Ethereum.
+            NFT stands for non-fungible token, meaning unique and irreplaceable.
+            NFT's give you something that can't be copied, the right to say you
+            have ownership of the art piece. Most NFTs are part of a
+            cryptocurrency's blockchain, usually Ethereum. Hugo was invited to
+            join Foundation, a platform that allows creators to sell their art
+            as part of the Ethereum blockchain.
           </div>
 
-          <footer className="mt-12 flex items-center justify-between w-full h-24 border-t">
+          <button className="py-2 px-4 bg-red-500 rounded-lg border-2">
+            View on Foundation {"->"}
+          </button>
+
+          <footer className="mt-12 flex items-start justify-between w-full h-24 border-t">
             <div>
               <a
                 className="flex items-center justify-center"
-                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+                href="https://foundation.app/@hugocornellier"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Channel
+                Foundation
               </a>
-            </div>
-            <div className="flex flex-col">
-              <a href="mailto:hugo.cornellier@gmail.com">Press Inquiries</a>
 
               <a
                 className="flex items-center justify-center"
@@ -83,6 +85,26 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 Auction Terms
+              </a>
+              <a href="mailto:hugo.cornellier@gmail.com">Press Inquiries</a>
+            </div>
+            <div>
+              <div>© 2009-2021 Hugo Cornellier</div>
+              <a
+                className="flex items-center justify-center"
+                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Youtube
+              </a>
+              <a
+                className="flex items-center justify-center"
+                href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter
               </a>
             </div>
           </footer>

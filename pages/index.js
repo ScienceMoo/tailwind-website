@@ -22,7 +22,7 @@ export default function Home() {
         <img
           src="/NFTart.png"
           alt="Age 12 to Married NFT"
-          className="h-12 sm:h-32 md:h-48 object-cover w-full"
+          className="h-16 sm:h-32 md:h-48 object-cover w-full"
         />
 
         <div className="flex flex-col items-center justify-center p-2 text-center border-4 mb-4">

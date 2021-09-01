@@ -24,10 +24,10 @@ export default function AuctionTerms() {
             1.1 "Media"
           </span>
           <span className="pl-4 text-md mt-2 text-left">
-            means the “Charlie Bit My Finger - Again!” or “Charlie Bit Me” viral
-            video, name, logo and the likenesses of Harry Davies-Carr and
-            Charlie Davies-Carr contained within the audio-video, images, names,
-            titles and audio files associated with the Purchased NFT.
+            means the “AGE 12 TO MARRIED - I Took a Photo Every Day!” viral
+            video, name, logo and the likenesses of Hugo Cornellier contained
+            within the audio-video, images, names, titles and audio files
+            associated with the Purchased NFT.
           </span>
         </div>
       </main>

@@ -23,6 +23,8 @@ export default function Header() {
           href="https://foundation.app/@hugocornellier"
           className="px-4 font-bold text-sm md:text-md text-center"
           style={{ maxWidth: "100px" }}
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Follow on Foundation
         </a>

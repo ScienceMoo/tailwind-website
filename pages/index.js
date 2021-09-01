@@ -74,9 +74,7 @@ export default function Home() {
               </a>
             </div>
             <div className="flex flex-col">
-              <a href="mailto:<nowiki>hugo.cornellier@gmail.com">
-                Press Inquiries
-              </a>
+              <a href="mailto:hugo.cornellier@gmail.com">Press Inquiries</a>
 
               <a
                 className="flex items-center justify-center"

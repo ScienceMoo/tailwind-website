@@ -34,7 +34,9 @@ export default function Home() {
             internet history forever when it is auctioned off as an NFT.
           </p>
 
-          <div className="text-2xl md:text-3xl mt-5">What is an NFT?</div>
+          <div className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5">
+            What is an NFT?
+          </div>
 
           <div className="mt-3 text-md md:text-xl">
             NFT's have helped develop the rise of a new world for modern
@@ -42,7 +44,14 @@ export default function Home() {
             forever as a unique piece of history and culture.
           </div>
 
-          <div className="text-2xl md:text-3xl mt-5">How does it work?</div>
+          <div className="flex items-center justify-center w-full text-xl md:text-2xl mt-5">
+            <img
+              src="/eth.svg"
+              alt="ETH coin"
+              className="h-8 object-contain mr-4"
+            />
+            How does it work?
+          </div>
 
           <div className="mt-3 text-md md:text-xl">
             NFT stands for non-fungible token, meaning unique and irreplaceable.

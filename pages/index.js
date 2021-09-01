@@ -30,9 +30,6 @@ export default function Home() {
               alt="Age 12 to Married NFT"
               className="h-48 md:h-80 object-contain mb-2"
             />
-            {/* <p className="text-gray-500 font-bold text-md self-start">
-              184,453,211 views
-            </p> */}
           </div>
 
           <p className="mt-3 text-md md:text-xl">

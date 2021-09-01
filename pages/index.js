@@ -18,12 +18,6 @@ export default function Home() {
             Soon to be memorialized forever as an NFT!
           </div>
 
-          {/* <img
-            src="/NFTart.png"
-            alt="Age 12 to Married NFT"
-            className="h-16 sm:h-40 md:h-48 object-cover w-full"
-          /> */}
-
           <div className="flex flex-wrap items-center justify-center p-2 mb-4">
             <img
               src="/video_browser.png"

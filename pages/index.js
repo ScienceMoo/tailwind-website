@@ -3,75 +3,88 @@ import Header from "./header";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 px-4 sm:px-12 md:px-24 lg:px-60">
       <Head>
         <title>Age 12 to Married NFT</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-2 md:px-20 text-center">
+      <main
+        className="flex flex-col items-center justify-start w-full flex-1 text-center"
+        style={{ maxWidth: "900px" }}
+      >
         <Header />
 
+        <div className="text-3xl">
+          Soon to be memorialized forever in an NFT auction!
+        </div>
+
         <img
-          src="/hugonft.jpg"
+          src="/NFTart.png"
           alt="Age 12 to Married NFT"
-          className="h-48 md:h-96 object-contain mb-2 md:mb-6"
+          className="h-48 object-cover w-full"
         />
 
-        <p className="mt-3 text-xl px-2 md:px-20">
+        <div className="flex flex-col items-center justify-center p-2 text-center border-4 mb-4">
+          <img
+            src="/hugonft.jpg"
+            alt="Age 12 to Married NFT"
+            className="h-48 md:h-48 object-contain mb-2"
+          />
+
+          <p className="text-gray-500 font-bold text-md self-start">
+            184,453,211 views
+          </p>
+        </div>
+
+        <p className="mt-3 text-xl">
           Seen by over 180 million people, Age 12 to Married is in the top 100
-          viral videos of all time. This incredible work of art created by a
-          young man with devotion and dedication has inpired many other similar
-          videos on YouTube. Now, the video will be removed from YouTube and one
-          person will have the opportunity to own it in its new form as a 1/1
-          NFT.
+          viral videos of all time. This incredible timelapse of a lifetime
+          created by a young man with devotion and dedication has inspired many
+          other similar videos on YouTube. Now it will be memoralized in
+          internet history forever when it is auctioned off as an NFT.
         </p>
 
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full mb-4 px-2">
-          <a
-            href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
-            className="p-6 mt-6 text-left border md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Youtube &rarr;</h3>
-            <p className="mt-4 text-xl">
-              See the iconic video and check out Hugo's channel
-            </p>
-          </a>
+        <div className="text-3xl mt-5">What is an NFT?</div>
 
-          <a
-            href="/faq"
-            className="p-6 mt-6 text-left border md:w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">FAQ &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Frequently asked questions and NFT information.
-            </p>
-          </a>
+        <div className="mt-3 text-xl">
+          NFT's have helped develop the rise of a new world for modern artists,
+          one where digital art forms are recognized and appreciated forever as
+          a unique piece of history and culture.
         </div>
+
+        <div className="text-3xl mt-5">How does it work?</div>
+
+        <div className="mt-3 text-xl">
+          NFT stands for non-fungible token, meaning unique and
+          irreplaceable.NFT's give you something that can't be copied, the right
+          to say you have ownership of the art piece. Most NFTs are part of a
+          cryptocurrency's blockchain, usually Ethereum.
+        </div>
+
+        <footer className="mt-12 flex items-center justify-between w-full h-24 border-t">
+          <div>
+            <a
+              className="flex items-center justify-center"
+              href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Channel
+            </a>
+          </div>
+          <div>
+            <a
+              className="flex items-center justify-center"
+              href="/faq"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              FAQ
+            </a>
+          </div>
+        </footer>
       </main>
-
-      <footer className="flex items-center justify-between w-full h-24 border-t pl-20 pr-20">
-        <div>
-          <a
-            className="flex items-center justify-center"
-            href="https://www.youtube.com/channel/UCiEBv40OQ7zB68aK3lltQMg"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Channel
-          </a>
-        </div>
-        <div>
-          <a
-            className="flex items-center justify-center"
-            href="/faq"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            FAQ
-          </a>
-        </div>
-      </footer>
     </div>
   );
 }

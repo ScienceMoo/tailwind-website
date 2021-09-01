@@ -15,14 +15,14 @@ export default function Home() {
       >
         <Header />
 
-        <div className="text-3xl">
+        <div className="text-xl sm:text-2xl md:text-3xl mt-2">
           Soon to be memorialized forever in an NFT auction!
         </div>
 
         <img
           src="/NFTart.png"
           alt="Age 12 to Married NFT"
-          className="h-48 object-cover w-full"
+          className="h-12 sm:h-32 md:h-48 object-cover w-full"
         />
 
         <div className="flex flex-col items-center justify-center p-2 text-center border-4 mb-4">
@@ -37,7 +37,7 @@ export default function Home() {
           </p>
         </div>
 
-        <p className="mt-3 text-xl">
+        <p className="mt-3 text-md md:text-xl">
           Seen by over 180 million people, Age 12 to Married is in the top 100
           viral videos of all time. This incredible timelapse of a lifetime
           created by a young man with devotion and dedication has inspired many
@@ -45,17 +45,17 @@ export default function Home() {
           internet history forever when it is auctioned off as an NFT.
         </p>
 
-        <div className="text-3xl mt-5">What is an NFT?</div>
+        <div className="text-2xl md:text-3xl mt-5">What is an NFT?</div>
 
-        <div className="mt-3 text-xl">
+        <div className="mt-3 text-md md:text-xl">
           NFT's have helped develop the rise of a new world for modern artists,
           one where digital art forms are recognized and appreciated forever as
           a unique piece of history and culture.
         </div>
 
-        <div className="text-3xl mt-5">How does it work?</div>
+        <div className="text-2xl md:text-3xl mt-5">How does it work?</div>
 
-        <div className="mt-3 text-xl">
+        <div className="mt-3 text-md md:text-xl">
           NFT stands for non-fungible token, meaning unique and
           irreplaceable.NFT's give you something that can't be copied, the right
           to say you have ownership of the art piece. Most NFTs are part of a
@@ -73,7 +73,7 @@ export default function Home() {
               Channel
             </a>
           </div>
-          <div>
+          <div className="flex flex-col">
             <a
               className="flex items-center justify-center"
               href="/faq"
@@ -81,6 +81,14 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               FAQ
+            </a>
+            <a
+              className="flex items-center justify-center"
+              href="/auctionTerms"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Auction Terms
             </a>
           </div>
         </footer>

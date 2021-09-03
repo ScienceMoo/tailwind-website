@@ -12,7 +12,7 @@ export default function Header() {
           <a href="/">
             <div className="flex items-center justify-start">
               <img
-                src="/hugo_nft.svg"
+                src="/logo.svg"
                 alt="Age 12 to Married NFT"
                 className="h-12 sm:h-16 md:h-24 object-contain"
               />

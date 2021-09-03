@@ -6,6 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fontsource/almendra": "^4.5.0",
+    "@fontsource/karma": "^4.5.0",
+    "@fontsource/montserrat": "^4.5.1",
+    "@fontsource/raleway": "^4.5.0",
+    "@fontsource/roboto": "^4.5.0",
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"

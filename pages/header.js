@@ -1,3 +1,6 @@
+import "@fontsource/raleway/400.css";
+import "@fontsource/roboto/400.css";
+
 export default function Header() {
   return (
     <>
@@ -14,10 +17,10 @@ export default function Header() {
                 className="h-12 sm:h-16 md:h-24 object-contain"
               />
               <div>
-                <h1 className="text-md sm:text-xl md:text-3xl">
+                <div className="font-roboto text-md sm:text-xl md:text-3xl">
                   Age 12 to Married
-                </h1>
-                <div className="text-xs sm:text-sm md:text-xl self-start">
+                </div>
+                <div className="font-raleway font-semibold text-xs sm:text-sm md:text-xl self-start">
                   I Took a Photo Every Day!
                 </div>
               </div>

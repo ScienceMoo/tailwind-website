@@ -14,7 +14,7 @@ export default function Home() {
           className="flex flex-col items-center justify-start w-full flex-1"
           style={{ maxWidth: "900px" }}
         >
-          <div className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 text-center">
+          <div className="ext-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 text-center">
             Soon to be memorialized forever as an NFT!
           </div>
 

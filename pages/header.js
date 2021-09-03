@@ -28,7 +28,7 @@ export default function Header() {
           </a>
           <a href="https://foundation.app/@hugocornellier">
             <div
-              className="shadow hover:shadow-none py-2 px-6 rounded-lg text-xs sm:text-sm md:text-md text-white font-bold"
+              className="shadow hover:shadow-none py-2 px-4 sm:px-5 md:px-6 rounded-lg text-xs sm:text-sm md:text-md text-white font-bold"
               style={{
                 background: "rgb(2,0,36)",
                 background:

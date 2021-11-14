@@ -57,9 +57,10 @@ export default function Home() {
             NFT stands for non-fungible token, meaning unique and irreplaceable.
             NFT's give you something that can't be copied, the right to say you
             have ownership of the art piece. Most NFTs are part of a
-            cryptocurrency's blockchain, usually Ethereum. Hugo was invited to
-            join Foundation, a platform that allows creators to sell their art
-            as part of the Ethereum blockchain.
+            cryptocurrency's blockchain, usually Ethereum. Youtube Celebrity
+            Hugo Cornellier was invited to join Foundation, a platform that
+            allows creators to sell their art as part of the Ethereum
+            blockchain.
           </div>
 
           <a href="https://foundation.app/@hugocornellier">
@@ -76,6 +77,132 @@ export default function Home() {
               View on Foundation &rarr;
             </div>
           </a>
+
+          <div className="text-center text-3xl mt-10">
+            A timelapse of growing up in the early 2000...
+          </div>
+
+          <div className="text-center text-xl mt-6 mb-2">
+            Hugo's life flashes by in the background of his photos, offering us
+            a glimpse of his...
+          </div>
+
+          <div class="container mx-auto px-4">
+            <div className="text-3xl mt-2 text-center w-full">family</div>
+
+            <section class="py-8 px-4">
+              <div class="flex flex-wrap -mx-4">
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/familygatherings/omajane.png"
+                    alt="family"
+                  />
+                </div>
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/familygatherings/family_gathering.png"
+                    alt="family gathering"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="py-8 px-4">
+              <div class="flex flex-wrap -mx-4">
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/meals/students.JPG"
+                    alt="student-like meal"
+                  />
+                </div>
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/holidays/christmas_hugo.png"
+                    alt="christmas hugo"
+                  />
+                </div>
+              </div>
+            </section>
+
+            <section class="py-8 px-4">
+              <div className="text-3xl mt-2 text-center w-full">
+                life events
+              </div>
+              <div class="flex flex-wrap -mx-4">
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/lifeevents/buying_house.jpg"
+                    alt="buying first house"
+                  />
+                </div>
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img class="rounded shadow-md" src="/sold.png" alt="sold" />
+                </div>
+              </div>
+            </section>
+
+            <section class="py-8 px-4">
+              <div className="text-3xl mt-2 text-center w-full">
+                trips and adventures
+              </div>
+              <div class="flex flex-wrap -mx-4">
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/trips/juli.png"
+                    alt="juli"
+                  />
+                </div>
+                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                  <img
+                    class="rounded shadow-md"
+                    src="/trips/mum_cute.JPG"
+                    alt="family trip"
+                  />
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <div className="text-3xl mt-4 ">hairstyles...</div>
+          <section class="py-8 px-4">
+            <div class="flex flex-wrap -mx-4">
+              <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                <img
+                  class="rounded shadow-md"
+                  src="/hairstyles/blond.png"
+                  alt="blond"
+                />
+              </div>
+              <div class="md:w-1/2 px-4 mb-8 md:mb-0">
+                <img
+                  class="rounded shadow-md"
+                  src="/hairstyles/beard_rat.png"
+                  alt="beard"
+                />
+              </div>
+            </div>
+          </section>
+
+          <div className="text-xl mt-4 text-center w-full mb-2">
+            He even put it all together into a mosaic with more than 4000
+            photos!
+          </div>
+
+          <img
+            src="/mosaic_hugo.jpg"
+            alt="robot hugo"
+            className="h-56 md:h-80 object-contain"
+          />
+
+          <div className="text-xl mt-4 text-center w-full">
+            Hugo is still taking photos today!
+          </div>
 
           <Footer />
         </main>

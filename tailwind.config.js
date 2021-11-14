@@ -5,7 +5,12 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: (theme) => ({
+        familyHugo: "url('/family_hugo.png')",
+        familyHugo2: "url('/family_hugo2.jpg')",
+      }),
+    },
     fontFamily: {
       almendra: ["Almendra", ...defaultTheme.fontFamily.sans],
       raleway: ["Raleway", ...defaultTheme.fontFamily.sans],

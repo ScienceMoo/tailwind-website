@@ -90,7 +90,7 @@ export default function Timeline() {
           <div className="timelineHolder ">
             <TimelineHeader
               {...{ $barFill, $gay1, $gay2, $gay3, $gay4, scrollIntoView }}
-            />
+            />{" "}
           </div>
 
           <div ref={$gay1} id="gay1">

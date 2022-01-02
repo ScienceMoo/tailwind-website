@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Footer from "./footer";
+import ViewPictures from "../Components/ViewPictures";
 
 export default function Home() {
   return (
@@ -88,106 +89,35 @@ export default function Home() {
           </div>
 
           <div class="container mx-auto px-4">
-            <div className="text-3xl mt-2 text-center w-full">family</div>
+            <ViewPictures
+              title="family"
+              file1="/familygatherings/omajane.png"
+              file2="/familygatherings/family_gathering.png"
+            />
 
-            <section class="py-8 px-4">
-              <div class="flex flex-wrap -mx-4">
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/familygatherings/omajane.png"
-                    alt="family"
-                  />
-                </div>
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/familygatherings/family_gathering.png"
-                    alt="family gathering"
-                  />
-                </div>
-              </div>
-            </section>
+            <ViewPictures
+              file1="/meals/students.JPG"
+              file2="/holidays/christmas_hugo.png"
+            />
 
-            <section class="py-8 px-4">
-              <div class="flex flex-wrap -mx-4">
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/meals/students.JPG"
-                    alt="student-like meal"
-                  />
-                </div>
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/holidays/christmas_hugo.png"
-                    alt="christmas hugo"
-                  />
-                </div>
-              </div>
-            </section>
+            <ViewPictures
+              title="life events"
+              file1="/lifeevents/buying_house.jpg"
+              file2="/sold.png"
+            />
 
-            <section class="py-8 px-4">
-              <div className="text-3xl mt-2 text-center w-full">
-                life events
-              </div>
-              <div class="flex flex-wrap -mx-4">
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/lifeevents/buying_house.jpg"
-                    alt="buying first house"
-                  />
-                </div>
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img class="rounded shadow-md" src="/sold.png" alt="sold" />
-                </div>
-              </div>
-            </section>
+            <ViewPictures
+              title="trips and adventures"
+              file1="/trips/juli.png"
+              file2="/trips/mum_cute.JPG"
+            />
 
-            <section class="py-8 px-4">
-              <div className="text-3xl mt-2 text-center w-full">
-                trips and adventures
-              </div>
-              <div class="flex flex-wrap -mx-4">
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/trips/juli.png"
-                    alt="juli"
-                  />
-                </div>
-                <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                  <img
-                    class="rounded shadow-md"
-                    src="/trips/mum_cute.JPG"
-                    alt="family trip"
-                  />
-                </div>
-              </div>
-            </section>
+            <ViewPictures
+              title="hairstyles..."
+              file1="/hairstyles/blond.png"
+              file2="/hairstyles/beard_rat.png"
+            />
           </div>
-
-          <div className="text-3xl mt-4 ">hairstyles...</div>
-          <section class="py-8 px-4">
-            <div class="flex flex-wrap -mx-4">
-              <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                <img
-                  class="rounded shadow-md"
-                  src="/hairstyles/blond.png"
-                  alt="blond"
-                />
-              </div>
-              <div class="md:w-1/2 px-4 mb-8 md:mb-0">
-                <img
-                  class="rounded shadow-md"
-                  src="/hairstyles/beard_rat.png"
-                  alt="beard"
-                />
-              </div>
-            </div>
-          </section>
 
           <div className="text-xl mt-4 text-center w-full mb-2">
             He even put it all together into a mosaic with more than 4000
@@ -202,6 +132,27 @@ export default function Home() {
 
           <div className="text-xl mt-4 text-center w-full">
             Hugo is still taking photos today!
+          </div>
+
+          <button>See timeline</button>
+
+          <div style={{ width: `100%` }}>
+            <div class="relative pt-1">
+              <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
+                <div
+                  style={{ width: `30%` }}
+                  class="
+                    shadow-none
+                    flex flex-col
+                    text-center
+                    whitespace-nowrap
+                    text-white
+                    justify-center
+                    bg-purple-500
+                  "
+                ></div>
+              </div>
+            </div>
           </div>
 
           <Footer />

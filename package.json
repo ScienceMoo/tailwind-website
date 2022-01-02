@@ -10,7 +10,7 @@
     "@fontsource/karma": "^4.5.0",
     "@fontsource/montserrat": "^4.5.1",
     "@fontsource/raleway": "^4.5.0",
-    "@fontsource/roboto": "^4.5.0",
+    "@fontsource/roboto": "4.5.1",
     "fs": "^0.0.1-security",
     "jquery": "^3.6.0",
     "jsdom": "^18.1.0",

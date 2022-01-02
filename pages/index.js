@@ -16,7 +16,7 @@ export default function Home() {
           style={{ maxWidth: "900px" }}
         >
           <div className="ext-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 text-center">
-            Soon to be memorialized forever as an NFT!
+            Soon to be fluked forever as an NFT!
           </div>
 
           <div className="flex flex-wrap items-center justify-center p-2 mb-4">

@@ -1,5 +1,6 @@
 import "tailwindcss/tailwind.css";
 import Header from "./header";
+import "../timeline.scss";
 
 function MyApp({ Component, pageProps }) {
   return (

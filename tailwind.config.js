@@ -10,6 +10,9 @@ module.exports = {
         familyHugo: "url('/family_hugo.png')",
         familyHugo2: "url('/family_hugo2.jpg')",
       }),
+      transitionProperty: {
+        width: "width",
+      },
     },
     fontFamily: {
       almendra: ["Almendra", ...defaultTheme.fontFamily.sans],

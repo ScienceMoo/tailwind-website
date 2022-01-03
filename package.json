@@ -31,6 +31,6 @@
     "tailwindcss": "^2.2.4"
   },
   "resolutions": {
-    "styled-components": "^5"
+    "styled-components": "5.3.3"
   }
 }

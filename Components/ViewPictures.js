@@ -1,6 +1,6 @@
 export default function ViewPictures({ title, file1, file2 }) {
-  console.log(file1);
-  console.log(file2);
+  // console.log(file1);
+  // console.log(file2);
   return (
     <>
       <section className="py-8 px-4">

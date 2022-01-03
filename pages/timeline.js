@@ -38,9 +38,12 @@ export default function Timeline() {
     if (clicked.className == "bullet") {
       clicked = clicked.parentNode;
     }
+    else if (clicked.className == "label") {
+      clicked = clicked.parentNode;
+    }
 
-    console.log(clicked.parentNode);
-    console.log(clicked.className);
+    // console.log(clicked.parentNode);
+    // console.log(clicked.className);
 
     let count = 0;
     let something = clicked.previousSibling;

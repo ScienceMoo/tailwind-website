@@ -15,8 +15,10 @@ export default function Home() {
           className="flex flex-col items-center justify-start w-full flex-1"
           style={{ maxWidth: "900px" }}
         >
-          <div className="ext-xl sm:text-2xl md:text-3xl lg:text-4xl mt-2 text-center">
-            Soon to be test forever as an NFT!
+          <div 
+            style={{margin: "20px 0"}} 
+            className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5">
+            Soon to be Memorialized Forever as an NFT!
           </div>
 
           <div className="flex flex-wrap items-center justify-center p-2 mb-4">
@@ -28,11 +30,12 @@ export default function Home() {
           </div>
 
           <p className="mt-3 text-md md:text-xl">
-            Seen by over 180 million people, Age 12 to Married is in the top 100
-            viral videos of all time. This incredible timelapse of a lifetime
-            created by a young man with devotion and dedication has inspired
-            many other similar videos on YouTube. Now it will be memoralized in
-            internet history forever when it is auctioned off as an NFT.
+          With over 210 million views, Age 12 to Married is in 
+          the top 100 viral videos of all time. In this incredible 
+          timelapse, we see a young man grow up before our very eyes 
+          in an impressive display of dedication and devotion. For the first and only
+          time in history, the video will forever be memorialized in internet history 
+          and minted as an NFT.
           </p>
 
           <div className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5">
@@ -80,7 +83,7 @@ export default function Home() {
           </a>
 
           <div className="text-center text-3xl mt-10">
-            A timelapse of growing up in the early 2000...
+            A Photo Every Day... For 12 Years
           </div>
 
           <div className="text-center text-xl mt-6 mb-2">
@@ -88,7 +91,7 @@ export default function Home() {
             a glimpse of his...
           </div>
 
-          <div class="container mx-auto px-4">
+          <div className="container mx-auto px-4">
             <ViewPictures
               title="family"
               file1="/familygatherings/omajane.png"
@@ -134,14 +137,12 @@ export default function Home() {
             Hugo is still taking photos today!
           </div>
 
-          <button>See timeline</button>
-
           <div style={{ width: `100%` }}>
-            <div class="relative pt-1">
-              <div class="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
+            <div className="relative pt-1">
+              <div className="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
                 <div
                   style={{ width: `30%` }}
-                  class="
+                  className="
                     shadow-none
                     flex flex-col
                     text-center
@@ -154,6 +155,45 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          <a href='http://localhost:3000/timeline'>
+            <button
+             className='round-button'
+             style={{"display":"inline-flex",
+             "minWidth":"64px",
+             "WebkitBoxAlign":"center",
+             "alignItems":"center",
+             "WebkitBoxPack":"center",
+             "justifyContent":"center",
+             "position":"relative",
+             "width":"auto",
+             "boxSizing":"border-box",
+             "WebkitTapHighlightColor":"transparent",
+             "outline":"0px",
+             "border":"0px",
+             "margin":"0px",
+             "cursor":"pointer",
+             "userSelect":"none",
+             "verticalAlign":"middle",
+             "appearance":"none",
+             "textDecoration":"none",
+             "fontFamily":"Roboto, Helvetica, Arial, sans-serif",
+             "fontWeight":"500",
+             "fontSize":"0.875rem",
+             "lineHeight":"1.75",
+             "letterSpacing":"0.02857em",
+             "textTransform":"uppercase",
+             "padding":"6px 16px",
+             "transition":"background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+             "color":"rgb(255, 255, 255)",
+             "backgroundColor":"rgb(216, 27, 96)",
+             "boxShadow":"rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px",
+             "borderRadius":"20px !important",
+             "whiteSpace":"nowrap"}}
+            >
+              View Timeline
+            </button>
+          </a>
 
           <Footer />
         </main>

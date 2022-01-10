@@ -8,7 +8,7 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
   });
 
   useEffect(() => {
-    if (inView) {
+    if (inView && setActiveIndex) {
       setActiveIndex(index);
     }
   }, [inView]);

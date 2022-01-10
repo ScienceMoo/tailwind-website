@@ -18,7 +18,6 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
   return (
     <>
       <section className="py-8 px-4 mt-2" ref={ref}>
-        <h2>{`Header inside viewport ${inView}.`}</h2>
         {title && (
           <div className="text-3xl mt-2 text-center w-full mb-2">{title}</div>
         )}

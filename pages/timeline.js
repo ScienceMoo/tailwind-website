@@ -1,12 +1,11 @@
 import Head from "next/head";
 import Footer from "./footer";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ViewPictures from "../Components/ViewPictures";
 import TimelineHeader from "../Components/TimelineHeader";
 
 export default function Timeline() {
-  const [currentActive, setCurrentActive] = React.useState(0);
-  const [width, setWidth] = React.useState(0);
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const arrayofthings = [
     {
@@ -27,87 +26,29 @@ export default function Timeline() {
     },
   ];
 
-  arrayofthings.forEach((thing) => {
-    thing.ref = React.createRef();
-  });
+  useEffect(() => {
+    document
+      .getElementById(`thing${activeIndex}`)
+      .scrollIntoView({ behavior: "smooth" });
+  }, [activeIndex]);
 
-  function setTimelineItem(num) {
-    setCurrentActive(num);
-    setWidth(num * (100 / (arrayofthings.length - 1)));
-
-    document.getElementById("bar_fill").style.width =
-      num * (100 / (arrayofthings.length - 1)) + `%`;
-
-    for (let i = 0; i < num; i++) {
-      document.getElementById(`point${i}`).className = "point point--complete";
-    }
-
-    for (let i = num + 1; i < arrayofthings.length; i++) {
-      document.getElementById(`point${i}`).className = "point";
-    }
-
-    document.getElementById(`point${num}`).className = "point point--active";
-  }
-
-  function clickTimelineItem(e, refname) {
-    scrollIntoView(refname);
-    let clicked = e.target;
-    if (clicked.className == "bullet") {
-      clicked = clicked.parentNode;
-    } else if (clicked.className == "label") {
-      clicked = clicked.parentNode;
-    }
-
-    // console.log(clicked.parentNode);
-    // console.log(clicked.className);
-
-    let count = -1;
-    let something = clicked.previousSibling;
-    while (something !== null) {
-      count += 1;
-      something = something.previousSibling;
-    }
-
-    setTimelineItem(count);
-  }
-
-  function scrollIntoView(refname) {
-    refname.current.scrollIntoView({ behavior: "smooth" });
-  }
-
-  function leftArrow() {
-    console.log(currentActive);
-    setCurrentActive(currentActive - 1);
-    console.log(currentActive);
-    if (currentActive != 0) {
-      setTimelineItem(currentActive - 1);
-    }
-  }
-
-  function rightArrow() {
-    console.log(currentActive);
-    setCurrentActive(currentActive + 1);
-    console.log(currentActive);
-    if (currentActive != arrayofthings.length - 1) {
-      setTimelineItem(currentActive + 1);
-    }
-  }
-
-  React.useEffect(() => {
-    document.addEventListener("keydown", (e) => {
+  useEffect(() => {
+    const callback = (e) => {
       if (e.key == "ArrowLeft") {
-        leftArrow();
+        setActiveIndex((value) => (value == 0 ? value : value - 1));
       } else if (e.key == "ArrowRight") {
-        rightArrow();
+        setActiveIndex((value) =>
+          value == arrayofthings.length - 1 ? value : value + 1
+        );
       }
-    });
+    };
+
+    document.addEventListener("keydown", callback);
 
     return () => {
-      document.removeEventListener("keydown", (e) => {
-        console.log(e);
-      });
+      document.removeEventListener("keydown", callback);
     };
-  }, []);
+  }, [setActiveIndex]);
 
   return (
     <>
@@ -120,19 +61,23 @@ export default function Timeline() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main
-          onScroll={(e) => onWindowScroll(e)}
-          className="flex flex-col justify-start items-start w-full flex-1"
-        >
-          <div className="timelineHolder ">
+        <main className="flex flex-col justify-start items-start w-full flex-1">
+          <div className="timelineHolder mb-24">
             {arrayofthings.length > 0 && (
-              <TimelineHeader {...{ clickTimelineItem, arrayofthings }} />
+              <TimelineHeader
+                {...{ activeIndex, setActiveIndex, arrayofthings }}
+              />
             )}
           </div>
 
           {arrayofthings.map((thing, index) => (
-            <div key={index} ref={thing.ref} id={`thing${index}`}>
-              <ViewPictures title={thing.title} files={thing.pics} />
+            <div key={index} id={`thing${index}`}>
+              <ViewPictures
+                setActiveIndex={setActiveIndex}
+                index={index}
+                title={thing.title}
+                files={thing.pics}
+              />
             </div>
           ))}
 

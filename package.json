@@ -19,6 +19,7 @@
     "next": "latest",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-intersection-observer": "^8.33.1",
     "scriptjs": "^2.5.9",
     "styled-components": "^5.3.3",
     "tls": "^0.0.1",

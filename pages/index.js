@@ -3,6 +3,39 @@ import Footer from "./footer";
 import ViewPictures from "../Components/ViewPictures";
 
 export default function Home() {
+  const arrayofthings = [
+    {
+      title: 'Family', 
+      pics: [
+        "/familygatherings/omajane.png", 
+        "/familygatherings/family_gathering.png",
+        "/meals/students.JPG",
+        "/holidays/christmas_hugo.png"
+      ]
+    },
+    {
+      title: 'Life events', 
+      pics: [
+        "/lifeevents/buying_house.jpg",
+        "/sold.png"
+      ]
+    },
+    {
+      title: 'Trips and adventures.', 
+      pics: [
+        "/trips/juli.png",
+        "/trips/mum_cute.JPG"
+      ]
+    },
+    {
+      title: 'Hairstyles', 
+      pics: [
+        "/hairstyles/blond.png",
+        "/hairstyles/beard_rat.png"
+      ]
+    },
+  ]
+
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen py-2 px-4 sm:px-12 md:px-24 lg:px-60">
@@ -92,34 +125,16 @@ export default function Home() {
           </div>
 
           <div className="container mx-auto px-4">
-            <ViewPictures
-              title="family"
-              file1="/familygatherings/omajane.png"
-              file2="/familygatherings/family_gathering.png"
-            />
 
-            <ViewPictures
-              file1="/meals/students.JPG"
-              file2="/holidays/christmas_hugo.png"
-            />
-
-            <ViewPictures
-              title="life events"
-              file1="/lifeevents/buying_house.jpg"
-              file2="/sold.png"
-            />
-
-            <ViewPictures
-              title="trips and adventures"
-              file1="/trips/juli.png"
-              file2="/trips/mum_cute.JPG"
-            />
-
-            <ViewPictures
-              title="hairstyles..."
-              file1="/hairstyles/blond.png"
-              file2="/hairstyles/beard_rat.png"
-            />
+            {arrayofthings && arrayofthings.map((thing, index) => (
+              <div key={index}>
+                <ViewPictures
+                  title={thing.title}
+                  files={thing.pics}
+                />
+              </div>
+            ))}
+            
           </div>
 
           <div className="text-xl mt-4 text-center w-full mb-2">
@@ -135,25 +150,6 @@ export default function Home() {
 
           <div className="text-xl mt-4 text-center w-full">
             Hugo is still taking photos today!
-          </div>
-
-          <div style={{ width: `100%` }}>
-            <div className="relative pt-1">
-              <div className="overflow-hidden h-2 text-xs flex rounded bg-purple-200">
-                <div
-                  style={{ width: `30%` }}
-                  className="
-                    shadow-none
-                    flex flex-col
-                    text-center
-                    whitespace-nowrap
-                    text-white
-                    justify-center
-                    bg-purple-500
-                  "
-                ></div>
-              </div>
-            </div>
           </div>
 
           <a href='http://localhost:3000/timeline'>

@@ -1,34 +1,51 @@
 import Head from "next/head";
 import Footer from "./footer";
-import useScript from "../hooks/useScript";
 import React from "react";
 import ViewPictures from "../Components/ViewPictures";
 import TimelineHeader from "../Components/TimelineHeader";
 
 export default function Timeline() {
-  // useScript(
-  //   "https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"
-  // );
-  // useScript(
-  //   "https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"
-  // );
-  useScript(
-    "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenLite.min.js"
-  );
-  useScript(
-    "https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TimelineMax.min.js"
-  );
 
-  const $boxOne = React.createRef();
-  const $boxTwo = React.createRef();
-  const $boxThree = React.createRef();
-  const $gay1 = React.createRef();
-  const $gay2 = React.createRef();
-  const $gay3 = React.createRef();
-  const $gay4 = React.createRef();
+  const arrayofthings = [
+    {
+      title: 'Small Hughes.', 
+      pics: [
+        "/childhood/ju.jpg", 
+        "/childhood/dad.jpg",
+      ]
+    },
+    {
+      title: 'Medium Hughes.', 
+      pics: [
+        "/childhood/dad2.jpg",
+        "/childhood/ju2.jpg",
+      ]
+    },
+    {
+      title: 'Big Hughes.', 
+      pics: [
+        "beach_hugo.png",
+        "sloth_hugo.png",
+        "robot_hugo.jpg"
+      ]
+    },
+    {
+      title: 'Married', 
+      pics: [
+        "/hairstyles/blond.png",
+        "/hairstyles/beard_rat.png"
+      ]
+    },
+  ]
+
+  arrayofthings.forEach((thing) => {
+    thing.ref = React.createRef()
+  })
+
   const $barFill = React.createRef();
-  let $width = 18;
-  let currentActive = 1;
+
+  const [currentActive, setCurrentActive] = React.useState(0)
+  const [width, setWidth] = React.useState(0)
 
   function scrollIntoView(e, refname) {
     console.log(e);
@@ -51,10 +68,10 @@ export default function Timeline() {
       count += 1;
       something = something.previousSibling;
     }
-    currentActive = count;
-    $width = (count - 1) * 33;
+    setCurrentActive(count)
+    setWidth((count - 1) * (100 / (arrayofthings.length - 1)))
 
-    $barFill.current.style.width = $width + `%`;
+    $barFill.current.style.width = ((count - 1) * (100 / (arrayofthings.length - 1))) + `%`;
 
     something = clicked.previousSibling;
     for (let i = 1; i < count; i++) {
@@ -91,45 +108,26 @@ export default function Timeline() {
           className="flex flex-col justify-start items-start w-full flex-1"
         >
           <div className="timelineHolder ">
-            <TimelineHeader
-              {...{ $barFill, $gay1, $gay2, $gay3, $gay4, scrollIntoView }}
-            />{" "}
+            {arrayofthings.length > 0 && (
+              <TimelineHeader
+                {...{ $barFill, scrollIntoView, arrayofthings }}
+              />
+            )}
           </div>
 
-          <div ref={$gay1} id="gay1">
-            Small Hughes.
-            <ViewPictures
-              title="family"
-              file1="/familygatherings/omajane.png"
-              file2="/familygatherings/family_gathering.png"
-            />
-          </div>
-          <div ref={$gay2} id="gay2">
-            Medium Hughes.
-            <ViewPictures
-              file1="/meals/students.JPG"
-              file2="/holidays/christmas_hugo.png"
-            />
-          </div>
-          <div ref={$gay3} id="gay3">
-            Big Hughes.
-            <ViewPictures
-              title="trips and adventures"
-              file1="/trips/juli.png"
-              file2="/trips/mum_cute.JPG"
-            />
-          </div>
-          <div ref={$gay4} id="gay4">
-            Married
-            <ViewPictures
-              title="hairstyles..."
-              file1="/hairstyles/blond.png"
-              file2="/hairstyles/beard_rat.png"
-            />
-          </div>
+          {arrayofthings.map((thing, index) => (
+            <div key={index} ref={thing.ref} id={`thing${index}`}>
+              <ViewPictures
+                title={thing.title}
+                files={thing.pics}
+              />
+            </div>
+          ))}
+          
           <Footer />
         </main>
       </div>
+
     </>
   );
 }

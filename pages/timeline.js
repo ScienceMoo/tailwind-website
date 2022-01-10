@@ -48,7 +48,7 @@ export default function Timeline() {
     return () => {
       document.removeEventListener("keydown", callback);
     };
-  }, [setActiveIndex]);
+  }, [arrayofthings.length, setActiveIndex]);
 
   return (
     <>

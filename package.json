@@ -3,7 +3,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
     "@fontsource/almendra": "^4.5.0",
@@ -27,6 +28,8 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
+    "eslint": "8.6.0",
+    "eslint-config-next": "12.0.7",
     "postcss": "^8.3.5",
     "sass": "^1.45.2",
     "tailwindcss": "^2.2.4"

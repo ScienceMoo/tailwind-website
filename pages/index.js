@@ -1,40 +1,33 @@
+/* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Footer from "./footer";
 import ViewPictures from "../Components/ViewPictures";
+import Image from "next/image";
 
 export default function Home() {
   const arrayofthings = [
     {
-      title: 'Family', 
+      title: "Family",
       pics: [
-        "/familygatherings/omajane.png", 
+        "/familygatherings/omajane.png",
         "/familygatherings/family_gathering.png",
         "/meals/students.JPG",
-        "/holidays/christmas_hugo.png"
-      ]
+        "/holidays/christmas_hugo.png",
+      ],
     },
     {
-      title: 'Life events', 
-      pics: [
-        "/lifeevents/buying_house.jpg",
-        "/sold.png"
-      ]
+      title: "Life events",
+      pics: ["/lifeevents/buying_house.jpg", "/sold.png"],
     },
     {
-      title: 'Trips and adventures.', 
-      pics: [
-        "/trips/juli.png",
-        "/trips/mum_cute.JPG"
-      ]
+      title: "Trips and adventures.",
+      pics: ["/trips/juli.png", "/trips/mum_cute.JPG"],
     },
     {
-      title: 'Hairstyles', 
-      pics: [
-        "/hairstyles/blond.png",
-        "/hairstyles/beard_rat.png"
-      ]
+      title: "Hairstyles",
+      pics: ["/hairstyles/blond.png", "/hairstyles/beard_rat.png"],
     },
-  ]
+  ];
 
   return (
     <>
@@ -48,9 +41,10 @@ export default function Home() {
           className="flex flex-col items-center justify-start w-full flex-1"
           style={{ maxWidth: "900px" }}
         >
-          <div 
-            style={{margin: "20px 0"}} 
-            className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5">
+          <div
+            style={{ margin: "20px 0" }}
+            className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5"
+          >
             Soon to be Memorialized Forever as an NFT!
           </div>
 
@@ -63,12 +57,12 @@ export default function Home() {
           </div>
 
           <p className="mt-3 text-md md:text-xl">
-          With over 210 million views, Age 12 to Married is in 
-          the top 100 viral videos of all time. In this incredible 
-          timelapse, we see a young man grow up before our very eyes 
-          in an impressive display of dedication and devotion. For the first and only
-          time in history, the video will forever be memorialized in internet history 
-          and minted as an NFT.
+            With over 210 million views, Age 12 to Married is in the top 100
+            viral videos of all time. In this incredible timelapse, we see a
+            young man grow up before our very eyes in an impressive display of
+            dedication and devotion. For the first and only time in history, the
+            video will forever be memorialized in internet history and minted as
+            an NFT.
           </p>
 
           <div className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5">
@@ -76,7 +70,7 @@ export default function Home() {
           </div>
 
           <div className="mt-3 text-md md:text-xl">
-            NFT's have helped develop the rise of a new world for modern
+            NFT&apos;s have helped develop the rise of a new world for modern
             artists, one where digital art forms are recognized and appreciated
             forever as a unique piece of history and culture.
           </div>
@@ -92,11 +86,11 @@ export default function Home() {
 
           <div className="mt-3 text-md md:text-xl">
             NFT stands for non-fungible token, meaning unique and irreplaceable.
-            NFT's give you something that can't be copied, the right to say you
-            have ownership of the art piece. Most NFTs are part of a
-            cryptocurrency's blockchain, usually Ethereum. Youtube Celebrity
-            Hugo Cornellier was invited to join Foundation, a platform that
-            allows creators to sell their art as part of the Ethereum
+            NFT&apos;s give you something that can&apos;t be copied, the right
+            to say you have ownership of the art piece. Most NFTs are part of a
+            cryptocurrency&apos;s blockchain, usually Ethereum. Youtube
+            Celebrity Hugo Cornellier was invited to join Foundation, a platform
+            that allows creators to sell their art as part of the Ethereum
             blockchain.
           </div>
 
@@ -120,21 +114,17 @@ export default function Home() {
           </div>
 
           <div className="text-center text-xl mt-6 mb-2">
-            Hugo's life flashes by in the background of his photos, offering us
-            a glimpse of his...
+            Hugo&apos;s life flashes by in the background of his photos,
+            offering us a glimpse of his...
           </div>
 
           <div className="container mx-auto px-4">
-
-            {arrayofthings && arrayofthings.map((thing, index) => (
-              <div key={index}>
-                <ViewPictures
-                  title={thing.title}
-                  files={thing.pics}
-                />
-              </div>
-            ))}
-            
+            {arrayofthings &&
+              arrayofthings.map((thing, index) => (
+                <div key={index}>
+                  <ViewPictures title={thing.title} files={thing.pics} />
+                </div>
+              ))}
           </div>
 
           <div className="text-xl mt-4 text-center w-full mb-2">
@@ -152,40 +142,44 @@ export default function Home() {
             Hugo is still taking photos today!
           </div>
 
-          <a href='http://localhost:3000/timeline'>
+          <a href="http://localhost:3000/timeline">
             <button
-             className='round-button'
-             style={{"display":"inline-flex",
-             "minWidth":"64px",
-             "WebkitBoxAlign":"center",
-             "alignItems":"center",
-             "WebkitBoxPack":"center",
-             "justifyContent":"center",
-             "position":"relative",
-             "width":"auto",
-             "boxSizing":"border-box",
-             "WebkitTapHighlightColor":"transparent",
-             "outline":"0px",
-             "border":"0px",
-             "margin":"0px",
-             "cursor":"pointer",
-             "userSelect":"none",
-             "verticalAlign":"middle",
-             "appearance":"none",
-             "textDecoration":"none",
-             "fontFamily":"Roboto, Helvetica, Arial, sans-serif",
-             "fontWeight":"500",
-             "fontSize":"0.875rem",
-             "lineHeight":"1.75",
-             "letterSpacing":"0.02857em",
-             "textTransform":"uppercase",
-             "padding":"6px 16px",
-             "transition":"background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
-             "color":"rgb(255, 255, 255)",
-             "backgroundColor":"rgb(216, 27, 96)",
-             "boxShadow":"rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px",
-             "borderRadius":"20px !important",
-             "whiteSpace":"nowrap"}}
+              className="round-button"
+              style={{
+                display: "inline-flex",
+                minWidth: "64px",
+                WebkitBoxAlign: "center",
+                alignItems: "center",
+                WebkitBoxPack: "center",
+                justifyContent: "center",
+                position: "relative",
+                width: "auto",
+                boxSizing: "border-box",
+                WebkitTapHighlightColor: "transparent",
+                outline: "0px",
+                border: "0px",
+                margin: "0px",
+                cursor: "pointer",
+                userSelect: "none",
+                verticalAlign: "middle",
+                appearance: "none",
+                textDecoration: "none",
+                fontFamily: "Roboto, Helvetica, Arial, sans-serif",
+                fontWeight: "500",
+                fontSize: "0.875rem",
+                lineHeight: "1.75",
+                letterSpacing: "0.02857em",
+                textTransform: "uppercase",
+                padding: "6px 16px",
+                transition:
+                  "background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms",
+                color: "rgb(255, 255, 255)",
+                backgroundColor: "rgb(216, 27, 96)",
+                boxShadow:
+                  "rgb(0 0 0 / 20%) 0px 3px 1px -2px, rgb(0 0 0 / 14%) 0px 2px 2px 0px, rgb(0 0 0 / 12%) 0px 1px 5px 0px",
+                borderRadius: "20px !important",
+                whiteSpace: "nowrap",
+              }}
             >
               View Timeline
             </button>

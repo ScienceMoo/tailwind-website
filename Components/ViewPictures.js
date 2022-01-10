@@ -1,8 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
 import { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
 export default function ViewPictures({ index, title, files, setActiveIndex }) {
-  const { ref, inView, entry } = useInView({
+  const { ref, inView } = useInView({
     /* Optional options */
     threshold: 0,
   });
@@ -11,7 +13,7 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
     if (inView && setActiveIndex) {
       setActiveIndex(index);
     }
-  }, [inView]);
+  }, [inView, index, setActiveIndex]);
 
   return (
     <>

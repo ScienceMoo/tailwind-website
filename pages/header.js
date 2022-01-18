@@ -31,7 +31,7 @@ export default function Header() {
               </div>
             </div>
           </Link>
-          <a href="https://opensea.io/Hugo_Cornellier">
+          <Link passHref href="https://opensea.io/Hugo_Cornellier">
             <div
               className="shadow hover:shadow-none py-2 px-4 sm:px-5 md:px-6 rounded-lg text-xs sm:text-sm md:text-md text-white font-bold"
               style={{
@@ -44,7 +44,7 @@ export default function Header() {
             >
               Follow &rarr;
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </>

@@ -18,7 +18,7 @@ export default function Timeline() {
     },
     {
       title: "Big Hughes.",
-      pics: ["beach_hugo.png", "sloth_hugo.png", "robot_hugo.jpg"],
+      pics: ["/beach_hugo.png", "/sloth_hugo.png", "/robot_hugo.jpg"],
     },
     {
       title: "Married",
@@ -70,16 +70,20 @@ export default function Timeline() {
             )}
           </div>
 
-          {arrayofthings.map((thing, index) => (
-            <div key={index} id={`thing${index}`}>
-              <ViewPictures
-                setActiveIndex={setActiveIndex}
-                index={index}
-                title={thing.title}
-                files={thing.pics}
-              />
+          <div className="flex justify-center">
+            <div>
+              {arrayofthings.map((thing, index) => (
+                <div key={index} id={`thing${index}`}>
+                  <ViewPictures
+                    setActiveIndex={setActiveIndex}
+                    index={index}
+                    title={thing.title}
+                    files={thing.pics}
+                  />
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
 
           <Footer />
         </main>

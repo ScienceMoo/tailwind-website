@@ -25,10 +25,12 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
           <div className="flex flex-wrap -mx-4 justify-center">
             {files.map((file, index) => (
               <div key={index} className="md:w-1/2 px-4 mb-8 md:mb-4">
-                <img
-                  className="rounded shadow-md object-cover"
+                <Image
+                  className="rounded shadow-md object-contain"
                   src={file}
                   alt="picture"
+                  height="100"
+                  width="120"
                 />
               </div>
             ))}
@@ -38,9 +40,11 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
             {files.map((file, index) => (
               <div key={index} className="md:w-1/2 px-4 mb-8 md:mb-4">
                 <img
-                  className="rounded shadow-md object-cover"
+                  className="rounded shadow-md object-contain"
                   src={file}
                   alt="picture"
+                  height="100"
+                  width="120"
                 />
               </div>
             ))}

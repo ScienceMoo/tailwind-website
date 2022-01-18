@@ -50,10 +50,12 @@ export default function Home() {
           </div>
 
           <div className="flex flex-wrap items-center justify-center p-2 mb-4">
-            <img
+            <Image
               src="/video_browser2.png"
               alt="Age 12 to Married NFT"
               className="h-48 md:h-80 object-contain mb-2"
+              height="250"
+              width="350"
             />
           </div>
 
@@ -106,7 +108,7 @@ export default function Home() {
                   "rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset",
               }}
             >
-              View on Foundation &rarr;
+              View on OpenSea &rarr;
             </div>
           </Link>
 

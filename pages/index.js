@@ -3,6 +3,7 @@ import Head from "next/head";
 import Footer from "./footer";
 import ViewPictures from "../Components/ViewPictures";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   const arrayofthings = [
@@ -50,7 +51,7 @@ export default function Home() {
 
           <div className="flex flex-wrap items-center justify-center p-2 mb-4">
             <img
-              src="/video_browser.png"
+              src="/video_browser2.png"
               alt="Age 12 to Married NFT"
               className="h-48 md:h-80 object-contain mb-2"
             />
@@ -94,7 +95,7 @@ export default function Home() {
             blockchain.
           </div>
 
-          <a href="https://foundation.app/@hugocornellier">
+          <Link passHref href="https://opensea.io/Hugo_Cornellier">
             <div
               className="py-2 px-6 bg-red-600 rounded-lg text-lg text-white mt-6 font-bold"
               style={{
@@ -107,7 +108,7 @@ export default function Home() {
             >
               View on Foundation &rarr;
             </div>
-          </a>
+          </Link>
 
           <div className="text-center text-3xl mt-10">
             A Photo Every Day... For 12 Years
@@ -135,14 +136,14 @@ export default function Home() {
           <img
             src="/mosaic_hugo.jpg"
             alt="robot hugo"
-            className="h-56 md:h-80 object-contain"
+            className="rounded h-56 md:h-80 object-contain"
           />
 
           <div className="text-xl mt-4 text-center w-full">
             Hugo is still taking photos today!
           </div>
 
-          <a href="http://localhost:3000/timeline">
+          <Link passHref href="timeline">
             <button
               className="round-button"
               style={{
@@ -183,7 +184,7 @@ export default function Home() {
             >
               View Timeline
             </button>
-          </a>
+          </Link>
 
           <Footer />
         </main>

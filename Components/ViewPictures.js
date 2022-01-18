@@ -23,6 +23,7 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
                 src={file}
                 alt="picture"
                 layout="fill"
+                objectFit="cover"
               />
             </div>
           ))}

@@ -44,7 +44,7 @@ export default function Home() {
         >
           <div
             style={{ margin: "20px 0" }}
-            className="flex items-center justify-center w-full text-2xl md:text-3xl mt-5"
+            className="flex items-center justify-center w-full text-2xl md:text-3xl mt-4"
           >
             Soon to be Memorialized Forever as an NFT!
           </div>
@@ -54,7 +54,7 @@ export default function Home() {
               src="/video_browser2.png"
               alt="Age 12 to Married NFT"
               className="h-48 md:h-80 object-contain mb-2"
-              height="500"
+              height="400"
               width="600"
             />
           </div>
@@ -141,7 +141,7 @@ export default function Home() {
             className="rounded h-56 md:h-80 object-contain"
           />
 
-          <div className="text-xl mt-4 text-center w-full">
+          <div className="text-xl mt-4 mb-4 text-center w-full">
             Hugo is still taking photos today!
           </div>
 

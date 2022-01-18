@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import Head from "next/head";
 import Footer from "./footer";
-import ViewPictures from "../Components/ViewPictures";
+import ViewPictures from "../components/ViewPictures";
 import Image from "next/image";
 import Link from "next/link";
 

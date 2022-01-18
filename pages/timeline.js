@@ -1,8 +1,8 @@
 import Head from "next/head";
 import Footer from "./footer";
 import React, { useEffect, useState } from "react";
-import ViewPictures from "../Components/ViewPictures";
-import TimelineHeader from "../Components/TimelineHeader";
+import ViewPictures from "../components/ViewPictures";
+import TimelineHeader from "../components/TimelineHeader";
 
 export default function Timeline() {
   const [activeIndex, setActiveIndex] = useState(0);

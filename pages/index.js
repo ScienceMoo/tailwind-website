@@ -54,8 +54,8 @@ export default function Home() {
               src="/video_browser2.png"
               alt="Age 12 to Married NFT"
               className="h-48 md:h-80 object-contain mb-2"
-              height="250"
-              width="350"
+              height="500"
+              width="600"
             />
           </div>
 

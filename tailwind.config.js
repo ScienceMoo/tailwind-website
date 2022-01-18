@@ -23,7 +23,11 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      width: {
+        half: `40%`,
+      },
+    },
   },
   plugins: [],
 };

@@ -19,7 +19,7 @@ export default function ViewPictures({ index, title, files, setActiveIndex }) {
               className="w-full sm:w-5/12 m-4"
             >
               <Image
-                className="rounded shadow-md object-contain"
+                className="rounded shadow-md"
                 src={file}
                 alt="picture"
                 layout="fill"

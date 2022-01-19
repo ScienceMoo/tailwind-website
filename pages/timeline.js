@@ -70,18 +70,16 @@ export default function Timeline() {
             )}
           </div>
 
-          <div className="flex justify-center w-full">
-            {arrayofthings.map((thing, index) => (
-              <div key={index} id={`thing${index}`}>
-                <ViewPictures
-                  setActiveIndex={setActiveIndex}
-                  index={index}
-                  title={thing.title}
-                  files={thing.pics}
-                />
-              </div>
-            ))}
-          </div>
+          {arrayofthings.map((thing, index) => (
+            <div key={index} id={`thing${index}`} className="w-full">
+              <ViewPictures
+                setActiveIndex={setActiveIndex}
+                index={index}
+                title={thing.title}
+                files={thing.pics}
+              />
+            </div>
+          ))}
 
           <Footer />
         </main>

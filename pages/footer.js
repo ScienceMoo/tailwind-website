@@ -7,7 +7,7 @@ export default function Footer() {
         style={{ padding: "20px 0", marginBottom: "15px" }}
         className="mt-12 flex items-start justify-between w-full h-24 border-t"
       >
-        <div>
+        <div style={{ display: "block" }}>
           <Link className="flex items-center justify-center" href="/info">
             More Info
           </Link>

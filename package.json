@@ -11,7 +11,7 @@
     "@fontsource/karma": "^4.5.0",
     "@fontsource/montserrat": "^4.5.1",
     "@fontsource/raleway": "^4.5.0",
-    "@fontsource/roboto": "4.5.1",
+    "@fontsource/roboto": "4.5.8",
     "jsdom": "^18.1.0",
     "next": "latest",
     "react": "^17.0.2",
